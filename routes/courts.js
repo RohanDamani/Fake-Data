@@ -27,7 +27,7 @@ router.get('/casetype', function(req, res, next) {
   res.send(caseTypeDummyOptions);
 });
 
-router.get('/caseCategoryDummyOptions', function(req, res, next) {
+router.get('/caseCategory', function(req, res, next) {
   res.send(caseCategoryDummyOptions);
 });
 
