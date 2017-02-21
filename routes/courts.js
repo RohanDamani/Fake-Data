@@ -19,8 +19,16 @@ courthouseDummyOptions["Downey Courthouse"] = "Downey Courthouse"
 courthouseDummyOptions["Governer Courthouse"] = "Governer Courthouse"
 
 /* GET users listing. */
-router.get('/', function(req, res, next) {
+router.get('/courthouse', function(req, res, next) {
   res.send(courthouseDummyOptions);
+});
+
+router.get('/casetype', function(req, res, next) {
+  res.send(caseTypeDummyOptions);
+});
+
+router.get('/casecategory', function(req, res, next) {
+  res.send(caseCategoryDummyOptions);
 });
 
 module.exports = router;
