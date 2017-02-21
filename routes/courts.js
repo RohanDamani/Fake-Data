@@ -27,8 +27,12 @@ router.get('/casetype', function(req, res, next) {
   res.send(caseTypeDummyOptions);
 });
 
-router.get('/casecategory', function(req, res, next) {
+router.get('/caseCategoryDummyOptions', function(req, res, next) {
   res.send(caseCategoryDummyOptions);
+});
+
+router.get('/', function(req, res, next) {
+  res.send('Choose parameters: /courthouse /casetype /caseCategoryDummyOptions');
 });
 
 module.exports = router;
