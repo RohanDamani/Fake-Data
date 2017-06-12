@@ -9,12 +9,7 @@ caseCategoryDummyOptions["Collections (Other) - Between $10,000 and $25,000"] = 
 var caseTypeDummyOptions = {"Civil": "Civil"}
 caseTypeDummyOptions["Other"] = "Other"
 
-var courthouseDummyOptions = {"Alhambra Courthouse": "Alhambra Courthouse"}
-courthouseDummyOptions["Burbank Courthouse"] = "Burbank Courthouse"
-courthouseDummyOptions["Central Civil West"] = "Central Civil West"
-courthouseDummyOptions["Chatsworth Courthouse"] = "Chatsworth Courthouse"
-courthouseDummyOptions["Downey Courthouse"] = "Downey Courthouse"
-courthouseDummyOptions["Governer Courthouse"] = "Governer Courthouse"
+var courthouseDummyOptions = [{name: "Alhambra Courthouse"},{name:"Burbank Courthouse"},{name:"Central Civil West"},{name:"Chatsworth Courthouse"},{name:"Downey Courthouse"},{name:"Governer Courthouse"}]
 
 router.get('/case/courthouse', function(req, res, next) {
   res.send(courthouseDummyOptions);
