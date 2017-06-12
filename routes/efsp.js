@@ -2,16 +2,14 @@ var express = require('express');
 var router = express.Router();
 
 
-var caseCategoryDummyOptions = {'': ''}
-caseCategoryDummyOptions["Class Action - Under $10,000"] = "Class Action - Under $10,000"
+var caseCategoryDummyOptions = {"Class Action - Under $10,000": "Class Action - Under $10,000"}
 caseCategoryDummyOptions["Class Action - Unlimited"] = "Class Action - Unlimited"
 caseCategoryDummyOptions["Collections (Other) - Between $10,000 and $25,000"] = "Collections (Other) - Between $10,000 and $25,000"
 
-var caseTypeDummyOptions = {'': ''}
-caseTypeDummyOptions["Civil"] = "Civil"
+var caseTypeDummyOptions = {"Civil": "Civil"}
+caseTypeDummyOptions["Other"] = "Other"
 
-var courthouseDummyOptions = {'': ''}
-courthouseDummyOptions["Alhambra Courthouse"] = "Alhambra Courthouse"
+var courthouseDummyOptions = {"Alhambra Courthouse": "Alhambra Courthouse"}
 courthouseDummyOptions["Burbank Courthouse"] = "Burbank Courthouse"
 courthouseDummyOptions["Central Civil West"] = "Central Civil West"
 courthouseDummyOptions["Chatsworth Courthouse"] = "Chatsworth Courthouse"
